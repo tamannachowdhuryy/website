@@ -11321,3 +11321,42 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+
+.timeline-image {
+  width: 150px; /* Adjust the size as needed */
+  height: 150px;
+  background-color: #5c95ff; /* Background color of the circle */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Make sure the button is positioned correctly within the circle */
+  overflow: hidden; /* Ensures content doesn't spill out of the circle */
+}
+
+.timeline-image a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.resume-button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1.5;
+  width: 100%;
+  height: 100%;
+}
+
+.resume-button:hover {
+  color: #ffa9a3; /* Change text color on hover */
+}
