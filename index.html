@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
+        
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
@@ -13,24 +14,22 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
+         
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="assets/img/final2.0.png" alt="..." /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars ms-1"></i>
-                </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#services">Certifications</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">Resume</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#stories">Stories</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -38,214 +37,269 @@
         </nav>
         <!-- Masthead-->
         <header class="masthead">
-            <div class="container">
-                <div class="masthead-subheading">Welcome To My Website</div>
-                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#about">Resume</a>
+            <div class="container text-center">
+                <!-- Subheading -->
+                <div class="masthead-subheading" style="font-size: 1.5rem; color: #f8f9fa; font-family: 'Montserrat', sans-serif; margin-bottom: 1rem; animation: fadeIn 2s;">
+                    Exploring Tech. Building Solutions. Dreaming Big.
+                </div>
+                
+                <!-- Main Heading -->
+                <div class="masthead-heading text-uppercase" style="font-size: 3rem; color: #fff; font-family: 'Montserrat', sans-serif; font-weight: 700; margin-bottom: 1.5rem; animation: slideUp 1.5s;">
+                    Hi, I’m Tamanna, Your Next <span style="color: #d63384;">Innovative Developer</span>
+                </div>
+                
+                <!-- Animated Call-to-Action Buttons -->
+                <div class="btn-container" style="margin-top: 1.5rem; animation: fadeIn 2.5s;">
+                    <a class="btn btn-primary btn-xl text-uppercase" href="#about" style="font-size: 1rem; padding: 0.75rem 1.5rem; background-color: #d63384; border: none; color: #fff; border-radius: 5px; text-transform: uppercase; font-family: 'Montserrat', sans-serif; font-weight: 700; text-decoration: none; margin-right: 1rem;">
+                        View Resume
+                    </a>
+                    <a class="btn btn-secondary btn-xl text-uppercase" href="#portfolio" style="font-size: 1rem; padding: 0.75rem 1.5rem; background-color: #495057; border: none; color: #fff; border-radius: 5px; text-transform: uppercase; font-family: 'Montserrat', sans-serif; font-weight: 700; text-decoration: none;">
+                        Explore Projects
+                    </a>
+                </div>
             </div>
         </header>
-        <!-- Services-->
+        
+
+        <!-- Certifications Section -->
         <section class="page-section" id="services">
             <div class="container">
+                <!-- Section Header -->
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Certifications</h2>
-                    <h3 class="section-subheading text-muted">Acquired these certification during highschool and college</h3>
+                    <h3 class="section-subheading text-muted">Acquired these certifications during high school and college</h3>
                 </div>
+                <!-- Certification Cards -->
                 <div class="row text-center">
+                    <!-- Certification 1 -->
                     <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">CodePath's Intro to Cybersecurity Course</h4>
-                        <p class="text-muted">Successfully completed CodePath's Intro to Cybersecurity Course. Acquiring essential knowledge in cybersecurity principles, tools, and best practices, I am now equipped to safeguard digital assets and mitigate potential threats effectively. </p>
+                        <div class="certification-card">
+                            <span class="fa-stack fa-4x">
+                                <i class="fas fa-circle fa-stack-2x" style="color: #d63384;"></i>
+                                <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="my-3">CodePath's Intro to Cybersecurity Course</h4>
+                            <p class="text-muted">Successfully completed CodePath's Intro to Cybersecurity Course. Acquiring essential knowledge in cybersecurity principles, tools, and best practices, I am now equipped to safeguard digital assets and mitigate potential threats effectively.</p>
+                            <a href="assets/img/certification/dd3a7487-dd58-457d-87d4-060c1fabd540.pdf" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">View Certification</a>
+                        </div>
                     </div>
+                    <!-- Certification 2 -->
                     <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-computer fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Adobe Certified Professional</h4>
-                        <p class="text-muted">This prestigious credential validates my proficiency in utilizing Adobe Photoshop to create visually stunning designs, allowing me to deliver captivating and professional work to clients and audiences.</p>
+                        <div class="certification-card">
+                            <span class="fa-stack fa-4x">
+                                <i class="fas fa-circle fa-stack-2x" style="color: #d63384;"></i>
+                                <i class="fas fa-desktop fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="my-3">Adobe Certified Professional</h4>
+                            <p class="text-muted">This prestigious credential validates my proficiency in utilizing Adobe Photoshop to create visually stunning designs, allowing me to deliver captivating and professional work to clients and audiences.</p>
+                            <a href="https://www.credly.com/badges/ed07c443-fdee-41ea-a2ea-4fc95d339435?source=linked_in_profile" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">View Certification</a>
+                        </div>
                     </div>
+                    <!-- Certification 3 -->
                     <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-person fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Google Foundations of Project Management</h4>
-                        <p class="text-muted">Completed Google's Foundations of Project Management course. Gaining expertise in project planning, execution, and communication, I am now well-equipped to drive successful projects, delivering results with efficiency and precision.</p>
+                        <div class="certification-card">
+                            <span class="fa-stack fa-4x">
+                                <i class="fas fa-circle fa-stack-2x" style="color: #d63384;"></i>
+                                <i class="fas fa-user-tie fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="my-3">Google Foundations of Project Management</h4>
+                            <p class="text-muted">Completed Google's Foundations of Project Management course. Gaining expertise in project planning, execution, and communication, I am now well-equipped to drive successful projects, delivering results with efficiency and precision.</p>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/XKM7E45SVPQF?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">View Certification</a>
+                        </div>
                     </div>
-                    
-                    
+                    <!-- Certification 4 -->
+                    <center>
+                    <div class="col-md-4">
+                        <div class="certification-card">
+                            <span class="fa-stack fa-4x">
+                                <i class="fas fa-circle fa-stack-2x" style="color: #d63384;"></i>
+                                <i class="fas fa-robot fa-stack-1x fa-inverse"></i> <!-- Changed icon to a robot -->
+                            </span>
+                            <h4 class="my-3">Machine Learning Foundation</h4>
+                            <p class="text-muted">
+                                I proudly earned a Machine Learning certification from Cornell Tech through the Break Through Tech AI program during the summer of 2024. This intensive program provided me with a solid foundation in Artificial Intelligence and Machine Learning, covering core concepts, algorithms, and practical applications.</p>
+                            </p>
+                            <a href="assets/img/certification/CertificateReport (1).pdf" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">View Certification</a>
+                        </div>
+                    </div>
+                    </center>
                 </div>
             </div>
         </section>
-        <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
+        
+        
+        
+
+        <!-- Portfolio Section -->
+        <section class="page-section" id="portfolio" style="background: linear-gradient(120deg, #d1a3ff, #fcb1ff, #ffc3e0); padding: 4rem 0; color: #fff;">
             <div class="container">
+                <!-- Section Header -->
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Some projects I have create during my freetime and in class</h3>
+                    
                 </div>
+                <!-- Portfolio Items -->
                 <div class="row">
-                    <div class="col-lg-4 col-sm-7 mb-4">
-                        <!-- Portfolio item 1-->
+                    <!-- Portfolio Item 1 -->
+                    <div class="col-lg-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-duration="1000">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/1.png" alt="..." />
+                                <img class="img-fluid" src="assets/img/portfolio/youtube.png" alt="Youtube" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Refridge</div>
-                                <div class="portfolio-caption-subheading text-muted">Kode With Klossy</div>
+                                <div class="portfolio-caption-heading">YouTube-Channel-Performance-Analysis</div>
+                                
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-7 mb-4">
-                        <!-- Portfolio item 2-->
+
+                    <!-- Portfolio Item 2 -->
+                    <div class="col-lg-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-duration="1000">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/2.png" alt="..." />
+                                <img class="img-fluid" src="assets/img/portfolio/2.png" alt="Tic-Tac-Toe" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Tic-Tac-Toe</div>
-                                <div class="portfolio-caption-subheading text-muted">Peronal Project</div>
+                                
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-7 mb-4">
-                        <!-- Portfolio item 3-->
+
+                    <!-- Portfolio Item 3 -->
+                    <div class="col-lg-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-duration="1000">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/3.png" alt="..." />
+                                <img class="img-fluid" src="assets/img/portfolio/project_robotics.png" alt="Follow-the-Leader" />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Rotating Cube</div>
-                                <div class="portfolio-caption-subheading text-muted">Personal Project</div>
+                                <div class="portfolio-caption-heading">Follow-the-Leader</div>
+                                
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-7 mb-4 mb-lg-0">
-                        <!-- Portfolio item 4-->
+
+                    <!-- Portfolio Item 4 -->
+                    <div class="col-lg-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-duration="1000">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/4.webp" alt="..." />
+                                <img class="img-fluid" src="assets/img/portfolio/4.webp" alt="Hangman" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Hangman</div>
-                                <div class="portfolio-caption-subheading text-muted">School Project</div>
+                                
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-7 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
+
+                    <!-- Portfolio Item 5 -->
+                    <div class="col-lg-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-duration="1000">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/5.png" alt="..." />
+                                <img class="img-fluid" src="assets/img/portfolio/5.png" alt="Profémon!" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Profémon!</div>
-                                <div class="portfolio-caption-subheading text-muted">School Project</div>
+                                
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-7 mb-4 mb-sm-0">
-                        <!-- Portfolio item 6-->
+
+                    <!-- Portfolio Item 6 -->
+                    <div class="col-lg-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-duration="1000">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/6.jpg" alt="..." />
+                                <img class="img-fluid" src="assets/img/portfolio/6.jpg" alt="Dynamic Playlists" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Dynamic Playlists</div>
-                                <div class="portfolio-caption-subheading text-muted">School Project</div>
+                                
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-7 mb-4 mb-sm-0">
-                        <!-- Portfolio item 7-->
+
+                    <!-- Portfolio Item 7 -->
+                    <div class="col-lg-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-duration="1000">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal7">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/7.jpg" alt="..." />
+                                <img class="img-fluid" src="assets/img/portfolio/7.jpg" alt="Esteelauder Project" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Esteelauder Project</div>
-                                <div class="portfolio-caption-subheading text-muted">Kode With Klossy</div>
+                                
                             </div>
-                        </div> 
+                        </div>
                     </div>
 
-                    <div class="col-lg-4 col-sm-7 mb-4 mb-sm-0">
-                        <!-- Portfolio item 8-->
+                    <!-- Portfolio Item 8 -->
+                    <div class="col-lg-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-duration="1000">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal8">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/8.png" alt="..." />
+                                <img class="img-fluid" src="assets/img/portfolio/8.png" alt="Music-Queue-App" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Music-Queue-App</div>
-                                <div class="portfolio-caption-subheading text-muted">Hunter College: Daedalus Honors</div>
+                                
                             </div>
-                        </div> 
+                        </div>
                     </div>
 
-                    <div class="col-lg-4 col-sm-7 mb-4 mb-sm-0">
-                        <!-- Portfolio item 9-->
+                    <!-- Portfolio Item 9 -->
+                    <div class="col-lg-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-duration="1000">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal9">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/9.jpeg" alt="..." />
+                                <img class="img-fluid" src="assets/img/portfolio/9.jpeg" alt="Emotion-Detector" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Emotion-Detector</div>
-                                <div class="portfolio-caption-subheading text-muted">Personal Project</div>
+                                
                             </div>
-                        </div> 
+                        </div>
                     </div>
 
-                    <center><div class="col-lg-4 col-sm-7 mb-4 mb-sm-0"></div>
-                        <!-- Portfolio item 10-->
+                    <!-- Portfolio Item 10 -->
+                    <div class="col-lg-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-duration="1000">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal10">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/10.png" alt="..." />
+                                <img class="img-fluid" src="assets/img/portfolio/10.png" alt="GenrePredict-Book-Review-Classification" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">GenrePredict-Book-Review-Classification</div>
-                                <div class="portfolio-caption-subheading text-muted">Machine Learning Final Project</div>
+                                
                             </div>
-                        </div> 
+                        </div>
                     </div>
-                </center>
-                </div>
-            </div>
-        </section>
+                </section>
         <!-- Resume-->
         <section class="page-section" id="about">
             <div class="container">
@@ -253,21 +307,22 @@
                     <h2 class="section-heading text-uppercase">Resume</h2>
                     <!-- <h3 class="section-subheading text-muted">Work Experience</h3> -->
                 </div>
+
                 <ul class="timeline">
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/fdic1600.jpg" alt="..." /></div>
+                    <li data-aos="fade-up">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/codepath-1x1_solid-dark-1.webp" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>June 2024 - Present</h4>
-                                <h4 class="subheading">Federal Deposit Insurance Corporation</h4>
-                                <h5 class="subheading">Large Data Managment Intern</h5>  
+                                <h4>August 2024 - Present</h4>
+                                <h4 class="subheading">Codepath</h4>
+                                <h5 class="subheading">Web Development Tech Fellow</h5> 
                             </div>
-                            <div class="timeline-body"><p class="text-muted"></p>Developed a cross-walking tool that seamlessly connected FDIC documents with their FRB numbers, enabling efficient data matching with a single click.
-                                Explored and implemented Power BI solutions to investigate the potential for AI integration within the government sector, improving data analytics capabilities.
-                                Contributed to the FDIC website by creating a comprehensive glossary of API information sources, enhancing data transparency and accessibility for users.</div>
-                        </div>
+                            <div class="timeline-body"><p class="text-muted">Mentored and supported 12-16 students in CodePath's Web Development 
+                                course, focusing on HTML, CSS, and JavaScript. Guided students in building responsive websites and enhancing 
+                                technical interview skills for web development careers.</p></div>
                     </li>
-                    <li class="timeline-inverted">
+
+                    <li class="timeline-inverted" data-aos="fade-right">
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/hunter.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -278,7 +333,35 @@
                             <div class="timeline-body"><p class="text-muted">Provided specialized support to students in Introduction to Computer Science, offering guidance on course topics and concepts. Conducted comprehensive exam review sessions to prepare students for assessments, addressing inquiries and enhancing understanding. Responsibly graded assignments, projects, midterms, and final exams, contributing to the overall academic progress of students.</p></div>
                         </div>
                     </li>
-                    <li>
+                    
+                    <li data-aos="fade-left">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/Latitude logo.jpeg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>August 2024 - December 2024</h4>
+                                <h4 class="subheading">Latitude Ai</h4>
+                                <h5 class="subheading">Machine Learning Fellow</h5> 
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Led efforts to optimize Bird's-Eye View (BEV) segmentation, reducing memory and computation requirements for autonomous vehicle systems. Applied techniques from the PointBEV paper to enhance AI model performance for self-driving applications. Collaborated with team members to integrate AI-driven solutions and improve system accuracy, solving real-world challenges in autonomous driving. Debugged and fine-tuned AI models to ensure high precision, contributing to advancements in BEV segmentation technology.</p></div>
+                    </li>
+
+                    <li class="timeline-inverted" data-aos="fade-right">
+                    
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/fdic1600.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>June 2024 - August 2024</h4>
+                                <h4 class="subheading">Federal Deposit Insurance Corporation</h4>
+                                <h5 class="subheading">Large Data Managment Intern</h5>  
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Developed a cross-walking tool that seamlessly connected FDIC documents with their FRB numbers, enabling efficient data matching with a single click.
+                                Explored and implemented Power BI solutions to investigate the potential for AI integration within the government sector, improving data analytics capabilities.
+                                Contributed to the FDIC website by creating a comprehensive glossary of API information sources, enhancing data transparency and accessibility for users.
+                            </p>
+                            </div>
+                    </li>
+
+                    <li data-aos="fade-left">
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/master.jpeg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -289,7 +372,7 @@
                             <div class="timeline-body"><p class="text-muted">Within three weeks, developed a time-saving solution using REST API to streamline software engineering data transfer into PowerPoint, saving hundreds of hours for around two hundred teams, while gaining valuable experience in sprint methodologies and software engineering fundamentals, and ensuring effective project execution and timely delivery through Agile principles and practices, including daily stand-ups, sprint planning, and grooming.</p></div>
                         </div>
                     </li>
-                    <li class="timeline-inverted">
+                    <li class="timeline-inverted" data-aos="fade-right">
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/KWK.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -300,7 +383,7 @@
                             <div class="timeline-body"><p class="text-muted">In just two weeks, created an impactful website raising awareness about food insecurity and its causes, reaching thousands of visitors with educational content and motivating them to take action, while effectively collaborating with a diverse team to develop comprehensive solutions that alleviated food insecurity in local communities.</p></div>
                         </div>
                     </li>
-                    <li>
+                    <li data-aos="fade-left">
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/IBM.png" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -311,19 +394,8 @@
                             <div class="timeline-body"><p class="text-muted">Led daily standups, fostering progress and addressing roadblocks, while delivering an Agile-based presentation to GBS leaders in six weeks and facilitated Agile principles and practices to develop an application helping dyslexic individuals find the nearest gas stations, thereby reducing the risk of car accidents.</p></div>
                         </div>
                     </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/evc.png" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>July 2020 - August 2020</h4>
-                                <h4 class="subheading">Educational Video Center</h4>
-                                <h5 class="subheading">Youth Producer</h5>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">
-                                Co-produced and edited a 90-minute social justice film using Premiere Pro, and subsequently showcased the film at festivals such as Emoti-Con Festival and NAMLE conference.</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
+                    
+                    <li class="timeline-inverted" data-aos="fade-top">
                         <div class="timeline-image">
                             <a href="assets/tamanna_.pdf" target="_blank">
                                 <button class="resume-button">
@@ -341,8 +413,138 @@
                 </ul>
             </div>
         </section>
+        <!-- STORIES -->
+        <section class="page-section" id="stories" style="background: linear-gradient(120deg, #d1a3ff, #fcb1ff, #ffc3e0); padding: 4rem 0; color: #fff;">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Highlights </h2>
+                </div>
+        
+                <!-- Carousel Container -->
+                <div class="carousel">
+                    <button class="carousel-arrow left-arrow">&#10094;</button>
+        
+                    <div class="carousel-track-container">
+                        <ul class="carousel-track">
+                            <!-- Card 1 -->
+                            <li class="carousel-card">
+                                <div class="card-image">
+                                    <img src="assets/img/stories/breakthroughtech.jpeg" alt="BTT Event">
+                                    <div class="card-overlay">
+                                        <h3>Accenture</h3>
+                                        <p>Attended Break Through Tech AI program at Accenture.</p>
+                                       
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Card 2 -->
+                            <li class="carousel-card">
+                                <div class="card-image">
+                                    <img src="assets/img/stories/all_tech_is_human.jpeg" alt="Tech Event">
+                                    <div class="card-overlay">
+                                        <h3>All Tech Is Human</h3>
+                                        <p>Participated in a groundbreaking tech event focused on AI ethics.</p>
+                                       
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Card 3 -->
+                            <li class="carousel-card">
+                                <div class="card-image">
+                                    <img src="assets/img/stories/mls.jpeg" alt="mls">
+                                    <div class="card-overlay">
+                                        <h3>MLS</h3>
+                                        <p>Attended Break Through Tech AI program at MLS.</p>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                             <!-- Card 4 -->
+                             <li class="carousel-card">
+                                <div class="card-image">
+                                    <img src="assets/img/stories/nyu.jpeg" alt="nyu">
+                                    <div class="card-overlay">
+                                        <center><h3>NYUTandon’s Cybersecurity</h3></center>
+                                        <p>Attended NYU Tandon’s 14th Cybersecurity Lecture, which focused on public-private partnerships 
+                                            from government and industry perspectives, addressing software-related cyber issues 
+                                            and insights from professionals with diverse backgrounds in cybersecurity.</p>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                             <!-- Card 5 -->
+                             <li class="carousel-card">
+                                <div class="card-image">
+                                    <img src="assets/img/stories/washington.jpeg" alt="washington">
+                                    <div class="card-overlay">
+                                        <center><h3>Conference on Asian Pacific American Leadership (CAPAL) </h3></center>
+                                        <p>I traveled to Washington, D.C., for my internship and had the amazing opportunity 
+                                            to meet 30 incredible people in my cohort through the FDIC and CAPAP Fellowship.</p>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Card 6 -->
+                            <li class="carousel-card">
+                                <div class="card-image">
+                                    <img src="assets/img/stories/speech.jpeg" alt="pwc">
+                                    <div class="card-overlay">
+                                        <center><h3>PWC for Career Week </h3></center>
+                                        <p> I had the incredible honor of being a speaker at PWC for Career Week planning, 
+                                            sharing insights and experiences while connecting with inspiring individuals shaping the future of Career Week!</p>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Card 7 -->
+                            <li class="carousel-card">
+                                <div class="card-image">
+                                    <img src="assets/img/stories/hackathon.jpeg" alt="hackathon">
+                                    <div class="card-overlay">
+                                        <center><h3> Columbia DivHacks </h3></center>
+                                        <p> I had the incredible opportunity to participate in my first in-person hackathon at Columbia University, where 
+                                            I collaborated with amazing teammates and gained invaluable experience at the inspiring Columbia DivHacks event.</p>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Card 8 -->
+                            <li class="carousel-card">
+                                <div class="card-image">
+                                    <img src="assets/img/stories/mastercard.png" alt="mastercard">
+                                    <div class="card-overlay">
+                                        <center><h3> Mastercard </h3></center>
+                                        <p> I had the incredible opportunity to intern at Mastercard and met my AMAZING team!</p>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Card 9 -->
+                            <li class="carousel-card">
+                                <div class="card-image">
+                                    <img src="assets/img/stories/bootcamp.jpeg" alt="kode-with-klossy">
+                                    <div class="card-overlay">
+                                        <center><h3> Kode with Klossy </h3></center>
+                                        <p> I completed my first-ever bootcamp, where my amazing teammates and I built an entire 
+                                            website in just two weeks—and I even got to meet Karlie Kloss herself!</p>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <button class="carousel-arrow right-arrow">&#10095;</button>
+                </div>
+            </div>
+    
+        </section>
+        
+        
+        
+      
         <!-- Team-->
-        <section class="page-section bg-light" id="team">
+        <section class="page-section" id="team"> 
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">About Me</h2>
@@ -364,32 +566,17 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">
-                        I’m Tamanna Chowdhury, a Computer Science student at Hunter College. My interests lie in software engineering, AI, and machine learning, where I love turning complex problems into innovative solutions. I’ve gained hands-on experience at Latitude AI and through Cornell Tech’s Break Through Tech AI program, developing my technical skills and a passion for practical, project-based learning. As a teaching assistant, I enjoy making challenging topics accessible and engaging, and I’m constantly seeking new ways to bridge knowledge and application.</p></div>
+                        I'm Tamanna Chowdhury, a Computer Science student at Hunter College. My interests lie in software engineering, 
+                AI, and machine learning, where I turn complex problems into innovative solutions. I've gained hands-on 
+                experience at Latitude AI and through Cornell Tech's Break Through Tech AI program, developing my technical 
+                skills and a passion for practical, project-based learning. As a teaching assistant, I enjoy making challenging 
+                topics accessible and engaging, and I’m constantly seeking new ways to bridge knowledge and application.</p></div>
                 </div>
             </div>
         </section>
-        <!-- Clients
-        <div class="py-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg" alt="..." aria-label="Microsoft Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg" alt="..." aria-label="Google Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg" alt="..." aria-label="Facebook Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg" alt="..." aria-label="IBM Logo" /></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        -->
+    
         <!-- Contact-->
-        <section class="page-section" id="contact">
+        <section class="page-section" id="contact" >
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Get in Touch</h2>
@@ -481,25 +668,22 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Refridge</h2>
-                                    <p class="item-intro text-muted">This is a website me and my four teams created to help bring awareness to food insecurity.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.png" alt="..." />
-                                    <p>Providing easier access to quality produce in NYC through connecting community fridges and help educate people about community fridges.</p>
-                                    <p><a href="https://refridge.incrediblyuniqueusername.repl.co/">Visit Refridge.com!</a></p>
+                                    <h2 class="text-uppercase">YouTube-Channel-Performance-Analysis</h2>
+                                    <p class="item-intro text-muted">Displays Machine Learning Skills</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/youtube.png" alt="..." />
+                                    <p>This project analyzes the performance of YouTube videos based on various metrics, such as views, watch time, revenue, subscriber growth, and audience engagement. The goal is to uncover trends and actionable insights that help optimize content strategies for YouTube creators.</p>
+                                    <p><a href="https://github.com/tamannachowdhuryy/YouTube-Channel-Performance-Analysis/tree/main">Results</a></p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Project:</strong>
-                                            Kode With Klossy
+                                            Personal Project
                                         </li>
                                         <li>
                                             <strong>Category:</strong>
-                                            Web Development
+                                            Machine Learning
                                         </li>
                                     </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -542,10 +726,7 @@
                                             Python
                                         </li>
                                     </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -563,25 +744,28 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Rotating Cube</h2>
-                                    <p class="item-intro text-muted">Created a cube that rotates 360</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.png" alt="..." />
-                                    <p>I used HTML to create a cube that rotates. I used CSS and my math skills to figure out what coordinates to use to make the cube rotate with a good flow.</p>
-                                    <p><a href="https://github.com/tamannachowdhuryy/RotatingCube">Visit Rotating Cube Code</a></p>
+                                    <h2 class="text-uppercase">Follow-the- Leader </h2>
+                                    <p class="item-intro text-muted">Created a Follow-the-Leader project displaying what we learned during the semester</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/project_robotics.png" alt="..." />
+                                    <p>This project aims to develop a robotic system capable of autonomously following a specific object or another simulator. This technology has numerous potential applications, from law enforcement simulators that track suspects to logistics simulators assisting in production and delivery tasks. Using the simulator platform and ROS, we aim to create autonomous simulators that track moving targets while maintaining a specified distance, highlighting its relevance to modern robotics challenges.
+                                    </p>
+                                    <p><a href="https://github.com/tamannachowdhuryy/final-project">Results</a></p>
                                     <ul class="list-inline">
                                         <li>
+                                            <strong>Teammates:</strong>
+                                            Bode Chiu, Emily Klapper, Sarah Khaldi
+
+                                        </li>
+                                        <li>
                                             <strong>Project:</strong>
-                                            Perosnal 
+                                            Robotics Final 
                                         </li>
                                         <li>
                                             <strong>Category:</strong>
-                                            HTML and CSS
+                                            ROS and Python
                                         </li>
                                     </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -615,10 +799,7 @@
                                             C++
                                         </li>
                                     </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -651,10 +832,7 @@
                                             C++
                                         </li>
                                     </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -687,10 +865,7 @@
                                             C++
                                         </li>
                                     </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -724,10 +899,7 @@
                                             HTML, CSS and JavaScript
                                         </li>
                                     </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -762,10 +934,7 @@
                                             JSON, Python, HTML, CSS and JavaScript
                                         </li>
                                     </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -800,10 +969,7 @@
                                             JSON, Python, HTML, CSS and JavaScript
                                         </li>
                                     </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -838,10 +1004,7 @@
                                             Python
                                         </li>
                                     </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -859,5 +1022,9 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

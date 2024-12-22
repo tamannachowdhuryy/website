@@ -5273,264 +5273,56 @@ textarea.form-control-lg {
   outline: 0;
 }
 
-.modal-dialog {
-  position: relative;
-  width: auto;
-  margin: var(--bs-modal-margin);
-  pointer-events: none;
+/* Center modal vertically and horizontally */
+.portfolio-modal .modal-dialog {
+  margin: auto; /* Centers the modal vertically */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px; /* Adjust width as needed */
+  height: 100vh; /* Full height viewport */
 }
+
+.portfolio-modal .modal-content {
+  background: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  position: relative;
+  margin: auto; /* Ensure it's centered */
+}
+
+/* Close "X" button on the left side */
+.portfolio-modal .close-modal {
+  position: absolute;
+  top: 15px; /* Distance from the top */
+  left: 15px; /* Distance from the left */
+  width: 15px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #d63384; /* Matches your pink aesthetic */
+  background: transparent;
+  border: none;
+}
+
+.portfolio-modal .close-modal:hover {
+  color: #ff69b4; /* Lighter pink hover */
+  opacity: 0.8;
+}
+
+/* Add smooth animation to modal popup */
 .modal.fade .modal-dialog {
+  transform: translateY(-50%);
   transition: transform 0.3s ease-out;
-  transform: translate(0, -50px);
-}
-@media (prefers-reduced-motion: reduce) {
-  .modal.fade .modal-dialog {
-    transition: none;
-  }
-}
-.modal.show .modal-dialog {
-  transform: none;
-}
-.modal.modal-static .modal-dialog {
-  transform: scale(1.02);
 }
 
-.modal-dialog-scrollable {
-  height: calc(100% - var(--bs-modal-margin) * 2);
-}
-.modal-dialog-scrollable .modal-content {
-  max-height: 100%;
-  overflow: hidden;
-}
-.modal-dialog-scrollable .modal-body {
-  overflow-y: auto;
+.modal.fade.show .modal-dialog {
+  transform: translateY(0);
 }
 
-.modal-dialog-centered {
-  display: flex;
-  align-items: center;
-  min-height: calc(100% - var(--bs-modal-margin) * 2);
-}
 
-.modal-content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  color: var(--bs-modal-color);
-  pointer-events: auto;
-  background-color: var(--bs-modal-bg);
-  background-clip: padding-box;
-  border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
-  border-radius: var(--bs-modal-border-radius);
-  outline: 0;
-}
-
-.modal-backdrop {
-  --bs-backdrop-zindex: 1050;
-  --bs-backdrop-bg: #000;
-  --bs-backdrop-opacity: 0.5;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: var(--bs-backdrop-zindex);
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--bs-backdrop-bg);
-}
-.modal-backdrop.fade {
-  opacity: 0;
-}
-.modal-backdrop.show {
-  opacity: var(--bs-backdrop-opacity);
-}
-
-.modal-header {
-  display: flex;
-  flex-shrink: 0;
-  align-items: center;
-  justify-content: space-between;
-  padding: var(--bs-modal-header-padding);
-  border-bottom: var(--bs-modal-header-border-width) solid var(--bs-modal-header-border-color);
-  border-top-left-radius: var(--bs-modal-inner-border-radius);
-  border-top-right-radius: var(--bs-modal-inner-border-radius);
-}
-.modal-header .btn-close {
-  padding: calc(var(--bs-modal-header-padding-y) * 0.5) calc(var(--bs-modal-header-padding-x) * 0.5);
-  margin: calc(-0.5 * var(--bs-modal-header-padding-y)) calc(-0.5 * var(--bs-modal-header-padding-x)) calc(-0.5 * var(--bs-modal-header-padding-y)) auto;
-}
-
-.modal-title {
-  margin-bottom: 0;
-  line-height: var(--bs-modal-title-line-height);
-}
-
-.modal-body {
-  position: relative;
-  flex: 1 1 auto;
-  padding: var(--bs-modal-padding);
-}
-
-.modal-footer {
-  display: flex;
-  flex-shrink: 0;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-end;
-  padding: calc(var(--bs-modal-padding) - var(--bs-modal-footer-gap) * 0.5);
-  background-color: var(--bs-modal-footer-bg);
-  border-top: var(--bs-modal-footer-border-width) solid var(--bs-modal-footer-border-color);
-  border-bottom-right-radius: var(--bs-modal-inner-border-radius);
-  border-bottom-left-radius: var(--bs-modal-inner-border-radius);
-}
-.modal-footer > * {
-  margin: calc(var(--bs-modal-footer-gap) * 0.5);
-}
-
-@media (min-width: 576px) {
-  .modal {
-    --bs-modal-margin: 1.75rem;
-    --bs-modal-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  }
-  .modal-dialog {
-    max-width: var(--bs-modal-width);
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .modal-sm {
-    --bs-modal-width: 300px;
-  }
-}
-@media (min-width: 992px) {
-  .modal-lg,
-  .modal-xl {
-    --bs-modal-width: 800px;
-  }
-}
-@media (min-width: 1200px) {
-  .modal-xl {
-    --bs-modal-width: 1140px;
-  }
-}
-.modal-fullscreen {
-  width: 100vw;
-  max-width: none;
-  height: 100%;
-  margin: 0;
-}
-.modal-fullscreen .modal-content {
-  height: 100%;
-  border: 0;
-  border-radius: 0;
-}
-.modal-fullscreen .modal-header,
-.modal-fullscreen .modal-footer {
-  border-radius: 0;
-}
-.modal-fullscreen .modal-body {
-  overflow-y: auto;
-}
-
-@media (max-width: 575.98px) {
-  .modal-fullscreen-sm-down {
-    width: 100vw;
-    max-width: none;
-    height: 100%;
-    margin: 0;
-  }
-  .modal-fullscreen-sm-down .modal-content {
-    height: 100%;
-    border: 0;
-    border-radius: 0;
-  }
-  .modal-fullscreen-sm-down .modal-header,
-  .modal-fullscreen-sm-down .modal-footer {
-    border-radius: 0;
-  }
-  .modal-fullscreen-sm-down .modal-body {
-    overflow-y: auto;
-  }
-}
-@media (max-width: 767.98px) {
-  .modal-fullscreen-md-down {
-    width: 100vw;
-    max-width: none;
-    height: 100%;
-    margin: 0;
-  }
-  .modal-fullscreen-md-down .modal-content {
-    height: 100%;
-    border: 0;
-    border-radius: 0;
-  }
-  .modal-fullscreen-md-down .modal-header,
-  .modal-fullscreen-md-down .modal-footer {
-    border-radius: 0;
-  }
-  .modal-fullscreen-md-down .modal-body {
-    overflow-y: auto;
-  }
-}
-@media (max-width: 991.98px) {
-  .modal-fullscreen-lg-down {
-    width: 100vw;
-    max-width: none;
-    height: 100%;
-    margin: 0;
-  }
-  .modal-fullscreen-lg-down .modal-content {
-    height: 100%;
-    border: 0;
-    border-radius: 0;
-  }
-  .modal-fullscreen-lg-down .modal-header,
-  .modal-fullscreen-lg-down .modal-footer {
-    border-radius: 0;
-  }
-  .modal-fullscreen-lg-down .modal-body {
-    overflow-y: auto;
-  }
-}
-@media (max-width: 1199.98px) {
-  .modal-fullscreen-xl-down {
-    width: 100vw;
-    max-width: none;
-    height: 100%;
-    margin: 0;
-  }
-  .modal-fullscreen-xl-down .modal-content {
-    height: 100%;
-    border: 0;
-    border-radius: 0;
-  }
-  .modal-fullscreen-xl-down .modal-header,
-  .modal-fullscreen-xl-down .modal-footer {
-    border-radius: 0;
-  }
-  .modal-fullscreen-xl-down .modal-body {
-    overflow-y: auto;
-  }
-}
-@media (max-width: 1399.98px) {
-  .modal-fullscreen-xxl-down {
-    width: 100vw;
-    max-width: none;
-    height: 100%;
-    margin: 0;
-  }
-  .modal-fullscreen-xxl-down .modal-content {
-    height: 100%;
-    border: 0;
-    border-radius: 0;
-  }
-  .modal-fullscreen-xxl-down .modal-header,
-  .modal-fullscreen-xxl-down .modal-footer {
-    border-radius: 0;
-  }
-  .modal-fullscreen-xxl-down .modal-body {
-    overflow-y: auto;
-  }
-}
 .tooltip {
   --bs-tooltip-zindex: 1080;
   --bs-tooltip-max-width: 200px;
@@ -10886,6 +10678,7 @@ p {
   padding-bottom: 1rem;
   background-color: #212529;
 }
+
 #mainNav .navbar-toggler {
   padding: 0.75rem;
   font-size: 0.75rem;
@@ -10893,6 +10686,7 @@ p {
   text-transform: uppercase;
   font-weight: 700;
 }
+
 #mainNav .navbar-brand {
   color: #d63384;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -10900,66 +10694,111 @@ p {
   letter-spacing: 0.0625em;
   text-transform: uppercase;
 }
+
 #mainNav .navbar-brand img {
   height: 4.5rem;
 }
-#mainNav .navbar-nav .nav-item .nav-link {
+
+/* Centered navigation styles */
+#mainNav .navbar-nav {
+  margin: 0 auto;  /* This centers the navbar items */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#mainNav .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainNav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.95rem;
   color: #fff;
   letter-spacing: 0.0625em;
+  font-weight: 700; /* Add this to make text bold */
 }
-#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+
+
+#mainNav .nav-item .nav-link.active,
+#mainNav .nav-item .nav-link:hover {
   color: #d63384;
 }
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    border: none;
-    background-color: transparent;
-    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      border: none;
+      background-color: transparent;
+      transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
+
   #mainNav .navbar-brand {
-    font-size: 1.5em;
-    transition: font-size 0.3s ease-in-out;
+      font-size: 1.5em;
+      transition: font-size 0.3s ease-in-out;
   }
+
   #mainNav .navbar-brand img {
-    height: 10rem;
-    transition: height 0.3s ease-in-out;
+      height: 10rem;
+      transition: height 0.3s ease-in-out;
   }
+
   #mainNav.navbar-shrink {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: #212529;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      background-color: #212529;
   }
+
   #mainNav.navbar-shrink .navbar-brand {
-    font-size: 1.25em;
+      font-size: 1.25em;
   }
+
   #mainNav.navbar-shrink .navbar-brand svg,
   #mainNav.navbar-shrink .navbar-brand img {
-    height: 1.5rem;
+      height: 1.5rem;
   }
-  #mainNav .navbar-nav .nav-item {
-    margin-right: 1rem;
+
+  #mainNav .nav-item {
+      margin-right: 1rem;
   }
-  #mainNav .navbar-nav .nav-item:last-child {
-    margin-right: 0;
+
+  #mainNav .nav-item:last-child {
+      margin-right: 0;
   }
 }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+
 header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/wallpaper.jpg");
+  background-image: url("../assets/img/lofi-boy-landscape-3840x1080-15195.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
   
 }
+.masthead-subheading {
+  color: #fff; /* Or a darker shade of white like #f0f0f0 */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+}
+
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-weight: bold;
@@ -10993,16 +10832,41 @@ header.masthead .masthead-heading {
     margin-bottom: 4rem;
   }
 }
+
+.btn-primary {
+  background-color: #d63384; /* Consistent pink for both buttons */
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #b02d6f; /* Slightly darker pink on hover */
+}
+
 #portfolio .portfolio-item {
-  max-width: 26rem;
+  max-width: 26rem; /* Set a fixed width for the portfolio items */
+  height: 20rem; /* Set a fixed height for uniform size */
   margin-left: auto;
   margin-right: auto;
+  display: flex; /* Flexbox to center content inside */
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden; /* Ensures content doesn't overflow */
 }
+
 #portfolio .portfolio-item .portfolio-link {
   position: relative;
   display: block;
   margin: 0 auto;
+  width: 100%;
+  height: 80%; /* Take up most of the box */
 }
+
+#portfolio .portfolio-item .portfolio-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images fit without distortion */
+}
+
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   display: flex;
   position: absolute;
@@ -11014,68 +10878,43 @@ header.masthead .masthead-heading {
   opacity: 0;
   transition: opacity ease-in-out 0.25s;
 }
+
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
   font-size: 1.25rem;
   color: white;
 }
+
 #portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
   opacity: 1;
 }
+
 #portfolio .portfolio-item .portfolio-caption {
-  padding: 1.5rem;
+  padding: 1rem; /* Smaller padding to fit captions */
   text-align: center;
   background-color: #fff;
+  height: 20%; /* Fixed height for captions */
+  width: 100%; /* Full width of the box */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
-  font-size: 1.5rem;
+  font-size: 1.25rem; /* Adjust font size to fit within boxes */
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
-  margin-bottom: 0;
+  margin-bottom: -0.75rem; /* Add some space below the heading */
+  color: #d63384; /* Pink heading text */
 }
+
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
   font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #d63384; /* Pink subheading text */
+  font-size: 0.9rem; /* Adjust font size for balance */
 }
 
-.portfolio-modal .modal-dialog {
-  margin: 1rem;
-  max-width: 100vw;
-}
-.portfolio-modal .modal-content {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  text-align: center;
-}
-.portfolio-modal .modal-content h2, .portfolio-modal .modal-content .h2 {
-  font-size: 3rem;
-  line-height: 3rem;
-}
-.portfolio-modal .modal-content p.item-intro {
-  font-style: italic;
-  margin-bottom: 2rem;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-.portfolio-modal .modal-content p {
-  margin-bottom: 2rem;
-}
-.portfolio-modal .modal-content ul.list-inline {
-  margin-bottom: 2rem;
-}
-.portfolio-modal .modal-content img {
-  margin-bottom: 2rem;
-}
-.portfolio-modal .close-modal {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  width: 3rem;
-  height: 3rem;
-  cursor: pointer;
-  background-color: transparent;
-}
-.portfolio-modal .close-modal:hover {
-  opacity: 0.3;
-}
 
 .timeline {
   position: relative;
@@ -11244,6 +11083,29 @@ header.masthead .masthead-heading {
     padding: 0 100px 20px 20px;
   }
 }
+
+[data-aos="fade-up"] {
+  transform: translateY(50px);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+[data-aos="fade-up"].aos-animate {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+[data-aos="fade-right"] {
+  transform: translateX(-50px);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+[data-aos="fade-right"].aos-animate {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 .team-member {
   margin-bottom: 3rem;
   text-align: center;
@@ -11263,11 +11125,13 @@ header.masthead .masthead-heading {
 }
 
 section#contact {
-  background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
+  background: linear-gradient(120deg, #d1a3ff, #fcb1ff, #ffc3e0);
+  padding: 4rem 0;
+  color: #fff;
   background-repeat: no-repeat;
   background-position: center;
 }
+
 section#contact .section-heading {
   color: #fff;
 }
@@ -11359,4 +11223,169 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .resume-button:hover {
   color: #ffa9a3; /* Change text color on hover */
+}
+
+
+.certification-card {
+  background: #f8f9fa; /* Light gray background */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.certification-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.fa-stack .fa-circle {
+  color: #d63384; /* Matching theme color */
+}
+
+h4 {
+  font-weight: 700;
+  color: #212529; /* Dark text for contrast */
+}
+
+.text-muted {
+  color: #6c757d !important; /* Subtle gray for readability */
+  line-height: 1.6; /* Better spacing for text */
+}
+.certification-card {
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+iframe, embed {
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+
+/* Stories Section Styles */
+/* Carousel Styles */
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.carousel-track-container {
+  overflow: hidden;
+  width: 90%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-card {
+  flex: 0 0 auto;
+  width: 300px;
+  margin: 0 15px;
+  list-style: none;
+  position: relative;
+}
+
+.card-image {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card-image:hover img {
+  transform: scale(1.1);
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-image:hover .card-overlay {
+  opacity: 1;
+}
+
+.card-overlay h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-overlay p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.card-overlay button {
+  background: #fff;
+  color: #d63384;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.card-overlay button:hover {
+  background: #d63384;
+  color: #fff;
+}
+/* Carousel Arrows - Improved Styling */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  background: rgba(255, 255, 255, 0.8); /* Soft white background */
+  color: #d63384; /* Vibrant pink color to match the theme */
+  border: none;
+  font-size: 1.5rem; /* Reduced size */
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.carousel-arrow:hover {
+  background: #d63384; /* Bright pink on hover */
+  color: white; /* White text on hover */
+  transform: translateY(-50%) scale(1.1); /* Slightly enlarges on hover */
+}
+
+.left-arrow {
+  left: 20px; /* Better alignment from the edge */
+}
+
+.right-arrow {
+  right: 20px; /* Better alignment from the edge */
 }

@@ -52,3 +52,41 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+// Carousel JavaScript
+const track = document.querySelector('.carousel-track');
+const slides = Array.from(track.children);
+const leftArrow = document.querySelector('.left-arrow');
+const rightArrow = document.querySelector('.right-arrow');
+let currentSlide = 0;
+
+// Move Carousel
+function moveCarousel(direction) {
+    const slideWidth = slides[0].getBoundingClientRect().width;
+    if (direction === 'left' && currentSlide > 0) {
+        currentSlide--;
+    } else if (direction === 'right' && currentSlide < slides.length - 1) {
+        currentSlide++;
+    }
+    const amountToMove = -slideWidth * currentSlide;
+    track.style.transform = `translateX(${amountToMove}px)`;
+}
+
+// Event Listeners for Arrows
+leftArrow.addEventListener('click', () => moveCarousel('left'));
+rightArrow.addEventListener('click', () => moveCarousel('right'));
+
+document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll("[data-animate]");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, { threshold: 0.1 });
+
+    elements.forEach((el) => observer.observe(el));
+});
